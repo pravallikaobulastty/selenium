@@ -1,0 +1,19 @@
+package basicprograms;
+
+public class Interchangecontext {
+
+	public static void main(String[] args) {
+		int[]a=new int[5];
+		int i,t,sum=0;
+		a[5]=12345;
+		for(i=0;i<a.length;i++)
+		{
+			t=a[5]%10;
+			a[5]=a[5]/10;
+			sum=sum+t;
+		}
+			
+
+	}
+
+}

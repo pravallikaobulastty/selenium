@@ -1,0 +1,15 @@
+package basicprograms;
+import java.util.Scanner;
+public class Sumogdigits {
+	public static void main(String[] args) {
+		Scanner Scan=new Scanner(System.in);
+		int num,a,n,sum=0;
+		num=Scan.nextInt();
+		a=num%10;
+		n=num/10;
+		sum=sum+a;
+		System.out.println("sum of digits="+sum);
+		
+	}
+
+}

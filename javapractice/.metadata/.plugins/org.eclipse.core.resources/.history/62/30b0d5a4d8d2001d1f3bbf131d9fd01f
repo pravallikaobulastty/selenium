@@ -1,0 +1,19 @@
+package loops;
+
+public class Pattern_continoues {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i,j;
+		for(i=0;i<15;i++)
+		{
+			for(j=i+1;j<15;j++)
+			{
+				System.out.print(j+" ");
+			}
+			System.out.println();
+		}
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package jala_selenium;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.*;
+public class Login_page {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		WebDriver driver = new FirefoxDriver();
+		driver.navigate().to("http://magnus.jalatechnologies.com/");
+		Thread.sleep(3000);
+		By usernameloactor = By.cssSelector("input#UserName");
+		WebElement Username = driver.findElement(usernameloactor);
+		Username.sendKeys("training@jalaacademy.com");
+		By passwordlocator = By.cssSelector("input#Password");
+		WebElement Password = driver.findElement(passwordlocator);
+		Password.sendKeys("jobprogram");
+		By Signntnlocator = By.className("button.btn");
+		WebElement Signinbtn = driver.findElement(Signntnlocator);
+		Signinbtn.click();
+
+	}
+
+}
